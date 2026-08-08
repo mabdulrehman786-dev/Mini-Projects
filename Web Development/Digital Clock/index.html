@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional digital clock built with HTML, CSS, and JavaScript.">
+    <title>Digital Clock | Mini-Project</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- =========================
+         MAIN CLOCK APPLICATION
+         ========================= -->
+    <main class="clock-app">
+
+        <!-- Decorative background elements -->
+        <div class="background-glow background-glow--one"></div>
+        <div class="background-glow background-glow--two"></div>
+
+        <!-- Clock Card -->
+        <section class="clock-card" aria-label="Digital clock">
+
+            <!-- Application heading -->
+            <header class="clock-header">
+                <p class="eyebrow">DIGITAL CLOCK</p>
+                <h1>Current Time</h1>
+            </header>
+
+            <!-- Time display -->
+            <div class="time-display" aria-live="polite">
+                <span id="hours">00</span>
+                <span class="separator">:</span>
+                <span id="minutes">00</span>
+                <span class="separator">:</span>
+                <span id="seconds">00</span>
+            </div>
+
+            <!-- AM / PM indicator -->
+            <p id="period" class="period">AM</p>
+
+            <!-- Date information -->
+            <div class="date-panel">
+                <p id="dayName" class="day-name">Monday</p>
+                <p id="fullDate" class="full-date">January 1, 2026</p>
+            </div>
+
+            <!-- Footer -->
+            <footer class="clock-footer">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </footer>
+
+        </section>
+    </main>
+
+    <!-- Main JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
